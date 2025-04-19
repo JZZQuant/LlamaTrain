@@ -1,0 +1,17 @@
+{
+	"name": "llama-qlora-gpu",
+	"build": {
+	  "dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+	  "--gpus", "all"
+	],
+	"settings": {
+	  "terminal.integrated.defaultProfile.linux": "bash"
+	},
+	"extensions": [
+	  "ms-python.python",
+	  "ms-toolsai.jupyter"
+	]
+  }
+  

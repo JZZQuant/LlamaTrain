@@ -1,7 +1,7 @@
 {
 	"name": "llama-qlora-gpu",
 	"build": {
-	  "dockerfile": "Dockerfile"
+	  "dockerfile": "DockerFile"
 	},
 	"runArgs": [
 	  "--gpus", "all"

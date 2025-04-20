@@ -21,7 +21,8 @@ if download:
     tokenizer.save_pretrained(model_path)
 
     dataset = load_dataset("tatsu-lab/alpaca", split="train[:100]")  # Just 100 samples for fast test
-    dataset.save_to_disk("./alpaca_small")
+    dataset.save_to_disk(data_folder)
+    
 
 model = AutoModelForCausalLM.from_pretrained(
    model_path,
